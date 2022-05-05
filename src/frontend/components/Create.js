@@ -1,11 +1,10 @@
 
 import { useState  } from 'react'
 //import { ethers } from "ethers"
-import { Row, Spinner, Form, Button } from 'react-bootstrap'
+import { Row, Form, Button } from 'react-bootstrap'
 
 const Create = ({ taskManager, networkName, account }) => {
 
-    const [loading, setLoading] = useState(false)
     const [price, setPrice] = useState(null)
     const [name, setName] = useState('')
     const [taskAccount, setTaskAccount] = useState(account)
@@ -20,17 +19,8 @@ const Create = ({ taskManager, networkName, account }) => {
 
       //create task
       const task = await taskManager.createTask(name, description)
-
-      //return to home page after creating task
-      //window.location.href = '/'
+      console.log('task:', task)
     }
-
-    if (loading) return (
-        <main style={{ padding: "1rem 0" }}>
-            <h2>Loading the latest blocks...</h2>
-            <Spinner animation="border" style={{ display: 'flex' }} />
-        </main>
-    )
 
     // Render ---------------------------------------------------------------------------------------------------------- //
     return (
