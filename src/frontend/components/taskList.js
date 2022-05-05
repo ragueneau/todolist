@@ -33,6 +33,7 @@ const TaskList = ({taskList}) => {
                             <Link to={`/task/${item.id}`}>
                                 <Button variant="primary" size="sm">View</Button>
                             </Link>
+
                         </td>
                     </tr>
                 ))}
