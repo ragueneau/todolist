@@ -46,7 +46,7 @@ const Create = ({ taskManager, networkName, account }) => {
                 <Form.Control onChange={(e) => setPrice(e.target.value)} size="lg" required type="number" placeholder="Prize in xETH" />
                 <div className="d-grid px-0">
                   <Button onClick={createTask} variant="primary" size="lg">
-                    Create & List Task!!
+                    Create Task!!
                   </Button>
                 </div>
               </Row>
