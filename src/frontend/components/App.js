@@ -84,7 +84,10 @@ function App() {
             <Route exact path="/" element={
               <Home taskManager={taskManager} networkName={networkName} account={account}/>
             } />
-            <Route exact path="/Create" element={
+            <Route exact path="/profile" element={
+              <Home taskManager={taskManager} networkName={networkName} account={account}/>
+            } />
+            <Route exact path="/create" element={
               <Create taskManager={taskManager} networkName={networkName} account={account}/>
             } />
             <Route path="/task/:taskID" element={
