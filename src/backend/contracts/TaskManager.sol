@@ -104,9 +104,9 @@ contract TaskManager {
         emit UpdatedBy(_id, msg.sender);
     }
 
-    function changePriority(uint _id, uint _status) public {
+    function changePriority(uint _id, uint _priority) public {
         Task memory _task = tasks[_id];
-        _task.status = _status;
+        _task.priority = _priority;
         tasks[_id] = _task;
 
         emit ChangePriority(_id, _task.priority);
