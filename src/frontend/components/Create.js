@@ -19,7 +19,7 @@ const Create = ({ taskManager, networkName, account }) => {
       console.log(description)
 
       //create task
-      const task = await taskManager.createTask(name)
+      const task = await taskManager.createTask(name, description)
 
       //return to home page after creating task
       //window.location.href = '/'
