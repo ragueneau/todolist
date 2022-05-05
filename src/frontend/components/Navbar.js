@@ -15,7 +15,8 @@ const Navigation = ({ web3Handler, account, networkName }) => {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link as={Link} to="/">Home</Nav.Link>
-                        <Nav.Link as={Link} to="/Create">Create</Nav.Link>
+                        <Nav.Link as={Link} to="/create">Create</Nav.Link>
+                        <Nav.Link as={Link} to="/profile">Profile</Nav.Link>
                     </Nav>
                     <Button variant="outline-light">{networkName}</Button>
                     <Nav>
@@ -27,7 +28,6 @@ const Navigation = ({ web3Handler, account, networkName }) => {
                                 <Button variant="outline-light">
                                     {account.slice(0, 5) + '...' + account.slice(36, 42)}
                                 </Button>
-
                             </Nav.Link>
                         ) : (
                             <Button onClick={web3Handler} variant="outline-light">Connect Wallet</Button>
@@ -37,7 +37,6 @@ const Navigation = ({ web3Handler, account, networkName }) => {
             </Container>
         </Navbar>
     )
-
 }
 
 export default Navigation;
