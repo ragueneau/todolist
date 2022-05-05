@@ -4,53 +4,10 @@ import { useState, useEffect } from 'react'
 import { Col, Row, Spinner } from 'react-bootstrap'
 import TaskList from './taskList'
 
-const taskList2 = [
-    {
-        id: 1,
-        owner: "0x1234567890123456789012345678901234567890",
-        title: "Task 1",
-        description: "Description 1",
-        taskAccount: "0x1234567890123456789012345678901234567890",
-        price: "0.01",
-        completed: false,
-        started: true,
-        assigned: true,
-        startDate: "2022-05-01",
-        endDate: "2022-06-01"
-    },
-    {
-        id: 2,
-        owner: "0x1234567890123456789012345678901234567890",
-        title: "Task 2",
-        description: "Description 2",
-        taskAccount: "0x1234567890123456789012345678901234567890",
-        price: "0.01",
-        completed: false,
-        started: true,
-        assigned: true,
-        startDate: "2022-04-01",
-        endDate: "2022-06-01"
-    },
-    {
-        id: 3,
-        owner: "0x1234567890123456789012345678901234567890",
-        title: "Task 3",
-        description: "Description 3",
-        taskAccount: "0x1234567890123456789012345678901234567890",
-        price: "0.01",
-        completed: true,
-        started: true,
-        assigned: true,
-        startDate: "2022-03-01",
-        endDate: "2022-06-01"
-    }
-]
-
 const Home = ({ taskManager, networkName, account }) => {
     const [count, setCount] = useState(0);
     const [loading, setLoading] = useState(true)
     const [taskList, setTasks] = useState([])
-
 
     // getTaskList -------------------------------------------------------------------------------- //
     const getTaskList = async () => {
@@ -77,7 +34,6 @@ const Home = ({ taskManager, networkName, account }) => {
         setTasks(tasks)
         setLoading(false)
     }
-
 
     // useEffect -------------------------------------------------------------------------------- //
     useEffect(() => {
