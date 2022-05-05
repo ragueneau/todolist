@@ -16,8 +16,6 @@ const TaskList = ({taskList}) => {
                     <th>Start Date</th>
                     <th>End Date</th>
                     <th>Actions</th>
-
-
                 </tr>
             </thead>
             <tbody>
