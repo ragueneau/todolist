@@ -12,6 +12,11 @@ const TaskList = ({taskList}) => {
                     <th>Priority</th>
                     <th>Status</th>
                     <th>taskAccount</th>
+                    <th>Owner</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Actions</th>
+
 
                 </tr>
             </thead>
@@ -21,8 +26,16 @@ const TaskList = ({taskList}) => {
                         <td>{item.id.toString()}</td>
                         <td>{item.title}</td>
                         <td>{item.priority.toString()}</td>
-
-
+                        <td>{item.status.toString()}</td>
+                        <td>{}</td>
+                        <td>{}</td>
+                        <td>{}</td>
+                        <td>{item.dueBy.toString()}</td>
+                        <td>
+                            <Link to={`/task/${item.id}`}>
+                                <Button variant="primary" size="sm">View</Button>
+                            </Link>
+                        </td>
                     </tr>
                 ))}
             </tbody>
