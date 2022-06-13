@@ -16,7 +16,7 @@ import Create from './Create.js'
 import ContractAbi from '../contractsData/TaskManager.json'
 import ContractAddress from '../contractsData/TaskManager-address.json'
 
-// Fonction ---------------------------------------------------------------------------------------- //
+// Functions ---------------------------------------------------------------------------------------- //
 function App() {
   const [loading, setLoading] = useState(true)
   const [account, setAccount] = useState(null)
