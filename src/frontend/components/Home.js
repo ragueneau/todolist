@@ -14,14 +14,14 @@ const Home = ({ taskManager, networkName, account }) => {
         setLoading(true)
 
         const nbTasks = await taskManager.taskCount()
-        console.log('Task Count:', nbTasks.toString())
+        //console.log('Task Count:', nbTasks.toString())
 
         //get ownerAccount from the smartcontract
         const ownerAccount = await taskManager.ownerAccount()
 
         //console.log('tasks', tasks)
-        console.log('Contact: ', taskManager)
-        console.log('Owner Account: ', ownerAccount)
+        //console.log('Contact: ', taskManager)
+        //console.log('Owner Account: ', ownerAccount)
 
         //get all tasks
         const tasks = []
@@ -30,7 +30,7 @@ const Home = ({ taskManager, networkName, account }) => {
            tasks.push(task)
         }
 
-        console.log('tasks', tasks)
+        //console.log('tasks', tasks)
         setTasks(tasks)
         setLoading(false)
     }
