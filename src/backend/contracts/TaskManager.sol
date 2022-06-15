@@ -91,8 +91,9 @@ contract TaskManager {
         _task.completedAt = block.timestamp;
         tasks[_id] = _task;
 
-        emit TaskCompleted(_id, _task.completedAt);
         emit ChangeStatus(_id, 9);
+        emit TaskCompleted(_id, _task.completedAt);
+        emit UpdatedBy(_id, msg.sender);
     }
 
     function changeStatus(uint _id, uint _status) public {
