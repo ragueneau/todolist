@@ -8,13 +8,13 @@ import { ethers } from "ethers"
 
 // Export ------------------------------------------------------------------------------------------- //
 import './App.css';
-import Navigation from './Navbar';
-import Home from './Home.js'
-import Create from './Create.js'
+import Navigation from './routes/Navbar';
+import Home from './routes/Home.js'
+import Create from './routes/Create.js'
 
 // Contract Addresses ------------------------------------------------------------------------------ //
-import ContractAbi from '../contractsData/TaskManager.json'
-import ContractAddress from '../contractsData/TaskManager-address.json'
+import ContractAbi from './contractsData/TaskManager.json'
+import ContractAddress from './contractsData/TaskManager-address.json'
 
 // Functions ---------------------------------------------------------------------------------------- //
 function App() {

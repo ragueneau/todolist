@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react'
 //import { ethers } from "ethers"
 import { Col, Row, Spinner } from 'react-bootstrap'
-import TaskList from './taskList'
+import TaskList from '../components/taskList'
 
 const Home = ({ taskManager, networkName, account }) => {
     const [count, setCount] = useState(0);
