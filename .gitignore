@@ -25,3 +25,5 @@ yarn-error.log*
 artifacts/
 cache/
 package-lock.json
+config.json
+hardhat.config.js
