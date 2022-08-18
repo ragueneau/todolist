@@ -6,7 +6,6 @@ USER root
 WORKDIR /opt/todolist
 COPY . /opt/todolist
 
-# This seed has no value but it is required to build the app. #
 RUN npm install --location=global npm@8.16.0  \
   && npm install \
   && npm run build \
