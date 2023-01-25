@@ -27,3 +27,4 @@ config.json
 hardhat.config.js
 hardhat.js
 .env
+package-lock.json
