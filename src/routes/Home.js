@@ -12,26 +12,26 @@ const Home = ({ taskManager, networkName, account }) => {
     // getTaskList -------------------------------------------------------------------------------- //
     const getTaskList = async () => {
         setLoading(true)
-
-        const nbTasks = await taskManager.taskCount()
+        console.log('getTaskList')
+        // const nbTasks = await taskManager.taskCount()
         //console.log('Task Count:', nbTasks.toString())
 
         //get ownerAccount from the smartcontract
-        const ownerAccount = await taskManager.ownerAccount()
+        // const ownerAccount = await taskManager.ownerAccount()
 
         //console.log('tasks', tasks)
         //console.log('Contact: ', taskManager)
         //console.log('Owner Account: ', ownerAccount)
 
-        //get all tasks
-        const tasks = []
-        for (let i = 1; i <= nbTasks; i++) {
-           const task = await taskManager.tasks(i)
-           tasks.push(task)
-        }
+        // //get all tasks
+        // const tasks = []
+        // for (let i = 1; i <= nbTasks; i++) {
+        //    const task = await taskManager.tasks(i)
+        //    tasks.push(task)
+        // }
 
-        //console.log('tasks', tasks)
-        setTasks(tasks)
+        // //console.log('tasks', tasks)
+        // setTasks(tasks)
         setLoading(false)
     }
 
@@ -39,7 +39,7 @@ const Home = ({ taskManager, networkName, account }) => {
     useEffect(() => {
         let timer = setTimeout(() => {
             setCount((count) => count + 1);
-            getTaskList()
+            // getTaskList()
             setLoading(false)
         }, 1000);
         return () => clearTimeout(timer)
