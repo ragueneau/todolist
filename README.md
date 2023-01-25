@@ -1,4 +1,4 @@
-# Tokens Manager
+# TodoList
 
 ## Installation
 ```
@@ -11,7 +11,7 @@ npm install
 cp hardhat.config.example.js hardhat.config.js
 ```
 
-### Tokens Manager
+### TopoList
 ```
 cp src/config.example.json src/config.json
 ```
