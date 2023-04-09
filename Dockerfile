@@ -6,8 +6,8 @@ USER root
 WORKDIR /opt/todolist
 COPY . /opt/todolist
 
-RUN npm install --location=global npm@9.3.1  \
-  && npm install \
+RUN npm install --ignore-scripts --location=global npm@9.3.1  \
+  && npm install --ignore-scripts \
   && npm run build \
   && npm install -g serve
 

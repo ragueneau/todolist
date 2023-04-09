@@ -56,7 +56,7 @@ const Home = ({ taskManager, networkName, account }) => {
     return (
       <div className="flex justify-center">
         <div className="px-5 py-1 container">
-            <h3>Todo Manager</h3>
+            <h3>Todo Manager !!</h3>
             <Row className="g-2">
                 <Col className="g-2" >
                     <h4>Todo List</h4>
